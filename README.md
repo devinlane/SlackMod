@@ -22,8 +22,8 @@ Follow the steps below to build the application:
 1. **Clone the repository**:
 
     ```bash
-    git clone https://github.com/your-github-username/your-repo.git
-    cd your-repo
+    git clone https://github.com/AirOne-dev/SlackMod.git
+    cd SlackMod
     ```
 
 2. **Install Node.js dependencies**:
