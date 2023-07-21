@@ -1,0 +1,9 @@
+#!/bin/sh
+dir=$(dirname "$0")
+
+# This will open a new Terminal window, run the python command in it, and then hide the Terminal window
+osascript -e "tell application \"Terminal\"
+    do script \"'$dir/../Resources/pyvenv/bin/python3.9' '$dir/../Resources/src/main.py'\"
+    delay 1
+    set visible of front window to false
+end tell"

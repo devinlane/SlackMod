@@ -1,0 +1,21 @@
+{
+  "name": "slack-mod",
+  "version": "1.0.0",
+  "description": "Inject custom CSS and JS into Slack",
+  "main": "src/main.py",
+  "scripts": {
+    "build-js": "webpack --config webpack.config.js",
+    "build-app-mac": "sh src/mac-app/build.sh",
+    "dev-watch": "nodemon --watch ./src/*.ts --exec 'npm run dev'",
+    "dev": "python3 src/main.py"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.1.6",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}
