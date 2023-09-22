@@ -27,7 +27,8 @@ def signal_handler(sig, frame):
 
 signal.signal(signal.SIGINT, signal_handler)
 
-print("python can't automatically kill slack in macos, please ctrl+q slack then press enter")
+#print("python can't automatically kill slack in macos, please ctrl+q slack then press enter")
+kill_slack_processes()
 
 ERR_SLACK_NOT_FOUND =  "Could not find Slack install! Please:\n\t- install Slack\n\t- open a Github issue so I can support your install location\nPress Enter to exit."
 slack_location = "/Applications/Slack.app/Contents/MacOS/Slack"  # default for MacOS
@@ -35,7 +36,7 @@ slack_location = "/Applications/Slack.app/Contents/MacOS/Slack"  # default for M
 if platform.system() == "Windows":
     slack_location = "C:\\Users\\YourUserName\\AppData\\Local\\slack\\slack.exe"  # replace with actual path
 elif platform.system() == "Linux":
-    slack_location = "/usr/local/bin/slack"  # replace with actual path
+    slack_location = "/usr/bin/slack"  # replace with actual path
 
 if not os.path.exists(slack_location):
     input(ERR_SLACK_NOT_FOUND)
