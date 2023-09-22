@@ -18,7 +18,8 @@
                 width: 45px;
             }
             .p-ia4_client.p-ia4_client--with-workspace-switcher-prototype {
-                grid-template-columns: 45px 1fr;
+                grid-template-columns: 0px 1fr;
+                grid-template-rows: 45px auto;
             }
             .p-ia4_client .p-client_workspace--including_tab_rail {
                 grid-template-columns: 0px auto;
@@ -49,6 +50,35 @@
             }
             .p-channel_sidebar__section_heading_right {
                 display: none;
+            }
+            .p-ia4_client--with-workspace-switcher-prototype .p-workspace_switcher_prototype {
+                position: fixed;
+                left: 0px;
+                top: 0px;
+                width: auto;
+                margin-top: 0px;
+                margin-left: 4px;
+            }
+            .p-workspace_switcher_prototype .p-team_sidebar--classic_nav {
+                flex-direction: row;
+                gap: 10px;
+                margin: 0px;
+                height: 45px;
+                padding: 0px;
+            }
+            .p-team_sidebar--classic_nav .p-team_sidebar__teams {
+                flex-direction: row;
+                gap: 10px;
+                padding: 4px;
+            }
+            .c-button-unstyled.p-team_sidebar__item {
+                margin: 0px;
+            }
+            .p-workspace_switcher_prototype .p-team_sidebar__icon_button+.p-team_sidebar__icon_button {
+                margin: 0px;
+            }
+            .p-workspace_switcher_prototype .p-team_sidebar__icon_button {
+                margin: 0px;
             }
 
         `;
