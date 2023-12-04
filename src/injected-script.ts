@@ -6,26 +6,26 @@ function applyStyle() {
             color: var(--p-huddle__active_item_text);
             text-decoration: none;
         }
-        .p-ia4_client--with-workspace-switcher-prototype .p-tab_rail {
-            display: none;
-        }
         .p-workspace_switcher_prototype {
             width: 45px;
         }
-        .p-ia4_client.p-ia4_client--with-workspace-switcher-prototype {
+        .p-ia4_client.p-ia4_client--workspace-switcher-rail-visible {
             grid-template-columns: 0px 1fr;
             grid-template-rows: 45px auto;
         }
-        .p-ia4_client .p-client_workspace--including_tab_rail {
+        .p-ia4_client .p-client_workspace_wrapper {
             grid-template-columns: 0px auto;
+        }
+        .p-ia4_client .p-client_workspace_wrapper .p-tab_rail {
+            display: none;
         }
         .p-ia4_client.p-ia4_client--workspace-switcher-prototype-on .p-client_workspace--including_tab_rail {
             grid-template-columns: 0px auto;
         }
-        .p-ia4_client.p-ia4_client--workspace-switcher-prototype-on.p-ia4_client--with-workspace-switcher-prototype .p-client_workspace--including_tab_rail {
+        .p-ia4_client.p-ia4_client--workspace-switcher-rail-visible .p-client_workspace_wrapper {
             width: 100vw;
         }
-        .p-ia4_client--with-workspace-switcher-prototype .p-control_strip {
+        .p-ia4_client--workspace-switcher-rail-visible .p-control_strip {
             position: fixed;
             right: 42px;
             top: 2px;
@@ -36,10 +36,13 @@ function applyStyle() {
             gap: 15px;
             width: auto;
         }
-        .p-ia4_client.p-ia4_client--with-workspace-switcher-prototype .p-client_workspace__layout {
+        .p-ia4_client.p-ia4_client--workspace-switcher-rail-visible .p-client_workspace__layout {
             box-shadow: none;
         }
-        .p-ia4_client.p-ia4_client--with-workspace-switcher-prototype .p-view_contents--primary {
+        .p-ia4_client.p-ia4_client--workspace-switcher-rail-visible .p-client_workspace_wrapper .p-client_workspace {
+            padding-right: 0px;
+        }
+        .p-ia4_client.p-ia4_client--workspace-switcher-rail-visible .p-view_contents--primary {
             box-shadow: none;
         }
         .p-ia4_channel_list .p-channel_sidebar--iap1 .p-channel_sidebar__section_heading {
@@ -52,7 +55,7 @@ function applyStyle() {
         .p-channel_sidebar__section_heading_right {
             display: none;
         }
-        .p-ia4_client--with-workspace-switcher-prototype .p-workspace_switcher_prototype {
+        .p-ia4_client--workspace-switcher-rail-visible .p-workspace_switcher_prototype {
             position: fixed;
             left: 0px;
             top: 0px;
@@ -81,7 +84,7 @@ function applyStyle() {
         .p-workspace_switcher_prototype .p-team_sidebar__icon_button {
             margin: 0px;
         }
-        .p-ia4_client.p-ia4_client--workspace-switcher-prototype-on .p-ia4_top_nav {
+        .p-ia4_client.p-ia4_client--workspace-switcher-rail-visible .p-ia4_top_nav {
             height: 45px;
         }
     `;
