@@ -44,6 +44,7 @@ function applyStyle() {
         }
         .p-ia4_client.p-ia4_client--workspace-switcher-rail-visible .p-view_contents--primary {
             box-shadow: none;
+            border-left: 1px solid rgb(var(--quipBorder));
         }
         .p-ia4_channel_list .p-channel_sidebar--iap1 .p-channel_sidebar__section_heading {
             padding-right: 0px;
@@ -86,6 +87,10 @@ function applyStyle() {
         }
         .p-ia4_client.p-ia4_client--workspace-switcher-rail-visible .p-ia4_top_nav {
             height: 45px;
+        }
+        .p-ia4_client.p-ia4_client--workspace-switcher-rail-visible .p-view_contents--secondary {
+            box-shadow: none;
+            border-left: 1px solid rgb(var(--quipBorder));
         }
     `;
     styleSheet.id = "slack-custom-theme";
