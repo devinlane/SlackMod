@@ -13,7 +13,7 @@ function applyStyle() {
             grid-template-columns: 0px 1fr;
             grid-template-rows: 45px auto;
         }
-        .p-ia4_client .p-client_workspace_wrapper {
+        .p-ia4_client.p-ia4_client--workspace-switcher-rail-visible .p-client_workspace_wrapper {
             grid-template-columns: 0px auto;
         }
         .p-ia4_client .p-client_workspace_wrapper .p-tab_rail {
@@ -22,10 +22,10 @@ function applyStyle() {
         .p-ia4_client.p-ia4_client--workspace-switcher-prototype-on .p-client_workspace--including_tab_rail {
             grid-template-columns: 0px auto;
         }
-        .p-ia4_client.p-ia4_client--workspace-switcher-rail-visible .p-client_workspace_wrapper {
+        .p-ia4_client.p-ia4_client--workspace-switcher-rail-visible.p-ia4_client--narrow-feature-on .p-client_workspace_wrapper {
             width: 100vw;
         }
-        .p-ia4_client--workspace-switcher-rail-visible .p-control_strip {
+        .p-ia4_client--workspace-switcher-rail-visible.p-ia4_client--narrow-feature-on .p-control_strip {
             position: fixed;
             right: 42px;
             top: 2px;
@@ -35,6 +35,9 @@ function applyStyle() {
             flex-direction: row;
             gap: 15px;
             width: auto;
+        }
+        .p-ia4_client.p-ia4_client--workspace-switcher-rail-visible.p-ia4_client--narrow-feature-on .p-ia4_top_nav__native_ui_spacer {
+            width: 160px;
         }
         .p-ia4_client.p-ia4_client--workspace-switcher-rail-visible .p-client_workspace__layout {
             box-shadow: none;
