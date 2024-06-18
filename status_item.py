@@ -63,7 +63,7 @@ class AppIndicator:
 
     def launch_app(self, *args):
         if not self.process:  # Check if process is not already running
-            self.process = subprocess.Popen(launch_args)
+            self.process = subprocess.Popen(launch_args, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     
     def relaunch_app(self, *args):
         if self.process:

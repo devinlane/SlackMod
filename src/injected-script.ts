@@ -19,10 +19,9 @@ function applyStyle() {
         .p-ia4_client .p-client_workspace_wrapper .p-tab_rail {
             display: none;
         }
-        .p-ia4_client.p-ia4_client--workspace-switcher-prototype-on .p-client_workspace--including_tab_rail {
-            grid-template-columns: 0px auto;
-        }
         .p-ia4_client.p-ia4_client--workspace-switcher-rail-visible.p-ia4_client--narrow-feature-on .p-client_workspace_wrapper {
+            box-shadow: none;
+            grid-template-columns: 0px auto;
             width: 100vw;
         }
         .p-ia4_client--workspace-switcher-rail-visible.p-ia4_client--narrow-feature-on .p-control_strip {
