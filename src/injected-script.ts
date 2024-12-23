@@ -9,22 +9,22 @@ function applyStyle() {
         .p-workspace_switcher_prototype {
             width: 45px;
         }
-        .p-ia4_client.p-ia4_client--workspace-switcher-rail-visible {
+        .p-ia4_client.p-ia4_client--workspace-switcher-rail-visibletest {
             grid-template-columns: 0px 1fr;
             grid-template-rows: 45px auto;
         }
-        .p-ia4_client.p-ia4_client--workspace-switcher-rail-visible .p-client_workspace_wrapper {
+        .p-ia4_client.p-ia4_client--workspace-switcher-rail-visibletest .p-client_workspace_wrapper {
             grid-template-columns: 0px auto;
         }
         .p-ia4_client .p-client_workspace_wrapper .p-tab_rail {
             display: none;
         }
-        .p-ia4_client.p-ia4_client--workspace-switcher-rail-visible.p-ia4_client--narrow-feature-on .p-client_workspace_wrapper {
+        .p-ia4_client.p-ia4_client--workspace-switcher-rail-visibletest .p-client_workspace_wrapper {
             box-shadow: none;
             grid-template-columns: 0px auto;
             width: 100vw;
         }
-        .p-ia4_client--workspace-switcher-rail-visible.p-ia4_client--narrow-feature-on .p-control_strip {
+        .p-ia4_client--workspace-switcher-rail-visibletest .p-control_strip {
             position: fixed;
             right: 42px;
             top: 2px;
@@ -35,16 +35,16 @@ function applyStyle() {
             gap: 15px;
             width: auto;
         }
-        .p-ia4_client.p-ia4_client--workspace-switcher-rail-visible.p-ia4_client--narrow-feature-on .p-ia4_top_nav__native_ui_spacer {
+        .p-ia4_client.p-ia4_client--workspace-switcher-rail-visibletest .p-ia4_top_nav__native_ui_spacer {
             width: 160px;
         }
-        .p-ia4_client.p-ia4_client--workspace-switcher-rail-visible .p-client_workspace__layout {
+        .p-ia4_client.p-ia4_client--workspace-switcher-rail-visibletest .p-client_workspace__layout {
             box-shadow: none;
         }
-        .p-ia4_client.p-ia4_client--workspace-switcher-rail-visible .p-client_workspace_wrapper .p-client_workspace {
+        .p-ia4_client.p-ia4_client--workspace-switcher-rail-visibletest .p-client_workspace_wrapper .p-client_workspace {
             padding-right: 0px;
         }
-        .p-ia4_client.p-ia4_client--workspace-switcher-rail-visible .p-view_contents--primary {
+        .p-ia4_client.p-ia4_client--workspace-switcher-rail-visibletest .p-view_contents--primary {
             box-shadow: none;
             border-left: 1px solid rgb(var(--quipBorder));
         }
@@ -58,7 +58,7 @@ function applyStyle() {
         .p-channel_sidebar__section_heading_right {
             display: none;
         }
-        .p-ia4_client--workspace-switcher-rail-visible .p-workspace_switcher_prototype {
+        .p-ia4_client--workspace-switcher-rail-visibletest .p-workspace_switcher_prototype {
             position: fixed;
             left: 0px;
             top: 0px;
@@ -87,10 +87,10 @@ function applyStyle() {
         .p-workspace_switcher_prototype .p-team_sidebar__icon_button {
             margin: 0px;
         }
-        .p-ia4_client.p-ia4_client--workspace-switcher-rail-visible .p-ia4_top_nav {
+        .p-ia4_client.p-ia4_client--workspace-switcher-rail-visibletest .p-ia4_top_nav {
             height: 45px;
         }
-        .p-ia4_client.p-ia4_client--workspace-switcher-rail-visible .p-view_contents--secondary {
+        .p-ia4_client.p-ia4_client--workspace-switcher-rail-visibletest .p-view_contents--secondary {
             box-shadow: none;
             border-left: 1px solid rgb(var(--quipBorder));
         }

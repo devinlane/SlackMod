@@ -27,5 +27,5 @@ print(f"\tslack location:{slack_location}")
 print(f"\tscripts:")
 for script in scripts: print(f"\t\t{script}")
 
-inject(slack_location, devtools=False, timeout=60000, scripts=scripts)
+inject(slack_location, devtools=True, timeout=60000, scripts=scripts)
 
